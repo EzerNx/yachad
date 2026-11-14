@@ -44,7 +44,7 @@ app.get("/versets", (req, res) => {
 app.get("/versets/:numero", (req, res) => {
   const verset = trouverVerset(req.params.numero);
 
-  if (verset == undefined) {
+  if (verset === undefined) {
     res.status(404).send("Verset non trouvé");
     return;
   }

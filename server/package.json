@@ -1,10 +1,10 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "main": "bonjour.js",
+  "type": "module",
   "scripts": {
-    "dev": "node --watch serveur.js",
-    "typecheck": "tssc --noEmit",
+    "dev": "tsx watch src/serveur.ts",
+    "typecheck": "tsc --noEmit",
     "build": "tsc",
     "start": "node dist/serveur.js"
   },
